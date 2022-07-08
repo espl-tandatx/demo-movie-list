@@ -1,0 +1,69 @@
+.d-flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  padding: 50px 0;
+}
+.image-item{
+  padding: 10px;
+  width: 250px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  margin: 1%;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: all .2s;
+  position: relative;
+}
+.image-item:hover{
+  background-color: #fafafa;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.15) 0px -2px 6px 0px inset;
+}
+.image-item img{
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.image-item h4{
+  margin: 5px;
+}
+.image-item .add-favourite{
+  position: absolute;
+  top: 0;
+  right:5px;
+}
+.image-item .add-favourite img{
+  width: 45px;
+  opacity: .9;
+}
+.image-item .add-favourite:hover img{
+  opacity: 1;
+}
+.wrapper{
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.search-box input{
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  font-size: 1.1em;
+  display: block;
+  margin: auto;
+}
+.search-box input:focus-visible{
+  outline: none;
+}
+h3{
+  text-transform: uppercase;
+  border-bottom: solid 1px #e1e1e1;
+  padding: 5px;
+}
