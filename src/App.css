@@ -28,6 +28,10 @@
   max-width: 100%;
   border-radius: 10px 10px 0 0;
 }
+.image-item a{
+  color: #444;
+  text-decoration: none;
+}
 .image-item h4{
   margin: 5px;
 }

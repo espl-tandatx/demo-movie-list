@@ -16,7 +16,7 @@ function App() {
 
 		const response = await fetch(url);
 		const responseJson = await response.json();
-		console.log("responseJson", responseJson)
+		// console.log("responseJson", responseJson)
 		if (responseJson.Search) {
 			setMovies(responseJson.Search);
 		}
@@ -47,7 +47,7 @@ function App() {
 	useEffect(() => {
 		const movieFavourites = JSON.parse(
 			localStorage.getItem('favourites')
-		);
+		)|| [];
 
 		setFavourites(movieFavourites);
 	}, []);
@@ -66,7 +66,7 @@ function App() {
 			</div>
 		</div>
 
-		<div class="wrapper">
+		<div className="wrapper" id="favourite">
 			<h3>Favourites</h3>
 			<div className='d-flex'>
 				<MovieList 
